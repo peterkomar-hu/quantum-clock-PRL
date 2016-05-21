@@ -1,0 +1,13 @@
+Paper/tmp/*
+Paper/.texlispe
+Paper/.project
+
+Paper/*.gz
+Paper/*Notes.bib
+
+Supp/tmp/*
+Supp/.texlispe
+Supp/.project
+
+Supp/*.gz
+Supp/*Notes.bib
