@@ -368,6 +368,35 @@ where $\gamma_\text{dark}$ is the dark count rate of the detectors,
  The factor of $n$ is due to the collective enhancement of the said transition, and
  the factor of 4 is because four pulses are used in each connection.
 
+We note that in order to take full advantage of the collective enhancement
+factor, $n$ in \refeq{eq:f5}, the phase matching condition has to be satisfied
+between the two coherent fields, $g\rightarrow r_1$ (II) and $r_1\rightarrow e$
+(III), and the spontaneously emitted photon $e\rightarrow g$ (IV). When an
+optical cavity is placed around the ensemble, for the purpose of enhancing the
+spontaneous emission, one need to carefully choose the wavevectors of field II
+and III, such that $\bk_\text{IV} = \bk_\text{II} - \bk_\text{III}$, where
+$\bk_\text{IV}$ is the wavevector of the emitted photon, which should be
+paralell to the axis of the optical cavity, and the fields II and III should be
+incident at a non-zero angle in order to not be blocked by the cavity. This is
+possible only if the magnitude of $\bk_\text{III}$ is chosen to be slightly
+larger than required to bridge the energy difference between $r_1$ and $e$.
+Because the frequency of the state $e$ has a large spread (since it is very
+short-lived), the rate of the $r_1\rightarrow e \rightarrow g$ transition will
+not change significantly. (See \reffig{fig:cavity_fields}.)
+
+\begin{figure}
+\centering
+\includegraphics[width=0.40\textwidth]{./cavity_fields.pdf}
+\caption[cavity_fields]{
+\label{fig:cavity_fields}
+The spontaneous emission can be enhanced by an optical
+cavity only if the fields involved in the process are phase matched. This is
+possible by setting the setting the frequence of field III slightly higher,
+allowing the three fields to not be co-propagating. This way the coherent
+fields can enter at an angle, and not be blocked by the high-finesse optical
+cavity. The transition rate does not change considerably if the detuning of
+III is smaller than the linewidth of level $e$.}
+\end{figure}
 
 \subsection{Memory loss}
 During the creation step of each link, the state $\ket{s}$ is used as memory.

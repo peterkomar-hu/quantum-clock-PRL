@@ -39,15 +39,15 @@ Therefore, a correction factor of order $Sinc^2(\Delta K \times n
 ^{1/D} \times \lambda_{magic})$ might be necessary, where $D = {2,3}$
 for 2 or 3 dimensional ensembles.
 
- -> Make a drawing of the cavity + control fields
- -> Describe the orientations in caption
+ OK Make a drawing of the cavity + control fields
+ OK Describe the orientations in caption
 
 5) The previous point also raises the question that how the authors
 imagine different control fields to be applied in their scheme. A
 discussion on the details of different orientations of the applied
 fields and their implications is useful.
 
- -> (same as above)
+ OK (same as above)
 
 6) The authors present the stability gain by comparing their result to
 the standard approach, where the stability is set by the total number
