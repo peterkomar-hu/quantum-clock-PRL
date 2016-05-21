@@ -93,23 +93,23 @@ ensembles in each clock.
 2) In the first paragraph in page 2, description of the 4th step is
 not clear.
 
- -> Ammend description of step 4 on page 2, give more details.
+ OK Ammend description of step 4 on page 2, give more details.
 
 3) In the description right after Eq. 1, it might be good to mention
 that these are "collective" spin-wave states. In general, it could be
 useful to have distinguishable symbols for single atom states and
 collective states of atoms in an ensemble.
 
- -> Mention that the spin-waves are collective.
- -> Use a different symbol for single atom and collective states.
+ OK Mention that the spin-waves are collective.
+ OK Use a different symbol for single atom and collective states.
 
 4) The discussion leading to Eq. 2 deserves to be slightly expanded to
 include more details. One could show the results of one-time
 application of the conditional photon emission as an intermediate
 step.
 
- -> Expand discussion leading to Eq. 2.
- -> Show one-time application of conditional photon emission step.
+ OK Expand discussion leading to Eq. 2.
+ OK Show one-time application of conditional photon emission step.
 
 5) A minor typo in the Page 3, right column, paragraph starting with
 "In practice, ...". The sentence "In such a case, the messenger atom

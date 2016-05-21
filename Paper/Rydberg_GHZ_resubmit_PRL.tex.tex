@@ -301,16 +301,18 @@ $[\pi/(2\sqrt{n})]_{g,r1}$, $[\pi]_{f,r1}$, $[\pi]_{f,s}$,
 $[(\pi/(2\sqrt{n})]_{g,r1}$, $[\pi]_{f,r1}$, shown in \reffig{fig:steps123}(a),
 where $[\phi]_{a,b}$ stands for a pulse with total, single-atom Rabi phase
 $\phi$ between level $a$ and $b$.
-Starting from the state $\ket{g}^{\otimes n} =: \ket{0}$, this pulse sequence
-creates the state
+Starting from the state $\ket{g}^{\otimes n} =: \ket{0_f0_s}$, this pulse
+sequence creates the state
 \bel
 \label{eq:step1}
-(1 + f\+) (1 + s\+) \ket{0} =:
+(1 + f\+) (1 + s\+) \ket{0_f0_s} =:
 \Big(\ket{0_f} + \ket{1_f}\Big) \Big(\ket{0_s} + \ket{1_s}\Big), 
 \eel 
 where $f\+$
-and $s\+$ are creation operators of the two (approximately) independent spin
-wave modes, supported by the two levels $f$ and $s$. 
+and $s\+$ are creation operators of the two (approximately)
+independent spin wave modes, supported by the two levels $f$ and $s$. The kets,
+$\ket{n_f}, \ket{n_s}$ for $n\in \{0,1\}$ stand for collective spin waves being
+excited by $n$ quanta.
 
 \begin{figure}
 \centering
@@ -338,14 +340,16 @@ respectively.)}
 % Photon emission
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 In the second step, spin-photon entangled states, using the spin wave modes $f$
-and $s$, are created, based on an extended version of the scheme described
-in \cite{Li2013} and collective enhancement. Each spin-photon entangled state is
+and $s$, are created, based on an extended version of the scheme described in
+\cite{Li2013} and collective enhancement. Each spin-photon entangled state is
 created by the pulse sequence shown in \reffig{fig:steps123}(b), involving
-$[\pi]_{s,r2}$, $[\pi/\sqrt{n}]_{g,r1}$, $[\pi]_{e,r1}$, $[\pi]_{s,r2}$. With additional pulses
-applied before and after this sequence flipping between $0_f\leftrightarrow
-1_f$, $0_s\leftrightarrow 1_s$ and swapping $f$ and $s$ waves, and proper
-timing, this is repeated four times to produce four time-bin separated light
-pulses, which are entangled with the two spin waves,
+$[\pi]_{s,r2}$, $[\pi/\sqrt{n}]_{g,r1}$, $[\pi]_{e,r1}$, $[\pi]_{s,r2}$. 
+This particular sequence results in emitting a single photon (from
+$e\rightarrow g$ transition) provided that the level $s$ is empty:
+$\ket{0_s}\ket{\text{vacuum}} \rightarrow \ket{0_s}\ket{1\text{ photon}}$. With
+additional pulses applied before and after this sequence flipping between $0_f\leftrightarrow 1_f$, $0_s\leftrightarrow 1_s$ and swapping $f$ and $s$
+waves, and proper timing, this is repeated four times to produce four time-bin
+separated light pulses, which are entangled with the two spin waves,
 \bal
 	&& \Big(
 	\ket{0_f}\ket{t_2} + \ket{1_f}\ket{t_4}
