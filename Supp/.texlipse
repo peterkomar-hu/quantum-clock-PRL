@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Sat May 21 11:15:57 EDT 2016
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=Rydberg_GHZ_resubmit_PRL_supp.tex
+outputFile=Rydberg_GHZ_resubmit_PRL_supp.pdf
+langSpell=en
+markDer=true
+srcDir=

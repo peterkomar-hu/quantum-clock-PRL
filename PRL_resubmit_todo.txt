@@ -1,0 +1,171 @@
+To Do - with PRL paper resubmission
+-----------------------------------
+
+Referee A:
+
+1) At principal quantum number of about 120. I would like the authors to discuss 
+ - the level spacing between neighboring Rydberg levels and 
+ - given the Rabi frequency and duration of the control pulses what is the probability of exciting multiple Rydberg levels (generating Rydberg wavepackets)?
+ - If this probability is not negligible, one needs to consider errors
+due to such an effect.
+
+ -> Discuss with Turker
+
+2) It is worth quantifying the ionization rate with expected trapping
+field intensity for Rydberg level of 120.
+
+ -> Discuss with Turker
+
+3) I believe error terms that involve averaging over
+<1/\Delta> needs to be evaluated separately for the messenger atom
+case, as the current averaging approach takes every two atoms in a 2D
+or 3D configuration, whereas for messenger atom this averaging should
+consider a fixed position for one of the atoms (the messenger atom).
+
+ -> Calculate blockade error for single messanger atom.
+
+4) In the supplementary material, section III C, in estimating
+$\epsilon_5$, the authors include the collective enhancement factor of
+$n$ in the spontaneous emission rate. Given that the collective
+excitation in |e> is generated using pulses number II and III as
+labeled in figure 2 (b), one might need to consider the phase matching
+condition in collective enhancement of the photon emission rate for
+|e> to |g> transition. The total wavevector for this process is
+$\Delta K = K_{II} - K_{III} - K_{IV}$. For co-propagating fields it
+is reasonable to assume this will have no impact on the collective
+spontaneous emission. However, given that $K_{IV}$ is assumed to be
+enhanced by a cavity, achieving $\Delta K = 0$ may not be trivial.
+Therefore, a correction factor of order $Sinc^2(\Delta K \times n
+^{1/D} \times \lambda_{magic})$ might be necessary, where $D = {2,3}$
+for 2 or 3 dimensional ensembles.
+
+ -> Make a drawing of the cavity + control fields
+ -> Describe the orientations in caption
+
+5) The previous point also raises the question that how the authors
+imagine different control fields to be applied in their scheme. A
+discussion on the details of different orientations of the applied
+fields and their implications is useful.
+
+ -> (same as above)
+
+6) The authors present the stability gain by comparing their result to
+the standard approach, where the stability is set by the total number
+atoms and coherence time of the local oscillator. I would like the
+authors to compare their results to the case using a spin-squeezed
+ensemble in Ref. [10].
+
+ -> Compare final results with numbers in reference [10] (Kasevich)
+
+7) In section III E, the authors neglect fiber and coupling loss. This
+needs to be justified, maybe with reference to experimental values or
+a fair theoretical estimate. As the entanglement generation between
+separate clocks relies on single photon transmission, the authors
+should discuss the effect of inefficiency due to fiber or coupling
+loss. If this can be circumvented via a heralding BSM, how does a
+limited interference visibility affect the fidelity?
+
+ -> Estimate fiber loss between labs 
+ -> Estimate free-space loss between satellites
+ -> Derive maximum distances, where the waiting time is not affecting fidelity (this comes from memory time of the s-state)
+
+8) It will be informative, if the authors provide a timescale for a
+successful generation of a global GHZ state in their scheme for the
+total number or atoms/ensembles/clocks in the example discussed in the
+paper.
+
+ -> Estimate timescale for creating the global GHZ state (Assume 80% local operation fidelity)
+
+9) In the calculation regarding precision or stability of the quantum
+network of clocks, is there a hidden assumption on the local
+oscillators at spatially separate clocks to be phase-locked?
+
+ -> Explain that local oscialltors need to be synchronized in Supp.
+
+ 
+Minor suggestions/corrections:
+
+1) I suggest the authors to add M to the figure 1 to clarify number of
+ensembles in each clock.
+
+ -> Add 'M' to figure 1.
+
+2) In the first paragraph in page 2, description of the 4th step is
+not clear.
+
+ -> Ammend description of step 4 on page 2, give more details.
+
+3) In the description right after Eq. 1, it might be good to mention
+that these are "collective" spin-wave states. In general, it could be
+useful to have distinguishable symbols for single atom states and
+collective states of atoms in an ensemble.
+
+ -> Mention that the spin-waves are collective.
+ -> Use a different symbol for single atom and collective states.
+
+4) The discussion leading to Eq. 2 deserves to be slightly expanded to
+include more details. One could show the results of one-time
+application of the conditional photon emission as an intermediate
+step.
+
+ -> Expand discussion leading to Eq. 2.
+ -> Show one-time application of conditional photon emission step.
+
+5) A minor typo in the Page 3, right column, paragraph starting with
+"In practice, ...". The sentence "In such a case, the messenger atom
+can BE used" is missing "BE".
+
+ -> Fix typo.
+
+6) Page 4, below figure 5, the sentence starting with "Collective
+enhancement and phase matching of the ..." needs a reference to the
+supplementary material.
+
+ -> Add reference to Supp.
+
+7) In the supplementary material, section 1, before Eq. 2, [pi]_{f,r1}
+--> [\pi]_{f,r1}
+
+ -> Fix typo.
+
+8) In the supplementary material, section III C, "the spontaneous
+emission lifetime of the |e> --> |f> transition" should be "|e> -->
+|g> transition"?
+
+ -> Fix typo.
+
+9) In Eq. 22 in the supplementary material, I suggest to use a
+different symbol for the cavity finesse.
+
+ -> Use different symbol for cavity finess.
+ 
+ 
+ Referee B:
+ ----------
+ 
+ - I found the title not specific enough. Ref. 6 that introduces the
+general concept was already entitled “A quantum network of clocks”. I
+would suggest changing the title to explicitly stating that this paper
+is providing a recipe to eventually implement this concept. It could
+be something like “Quantum network of atom clocks: a possible
+implementation with neutral atoms”…
+
+ OK Change title to “Quantum network of atom clocks: a possible
+implementation with neutral atoms”
+
+ - The error per atom depends on the lattice geometry. This is
+indicated in the caption of Table 1 where the reader is sent to the SI
+for the 2D case. It would be useful to stress this point in the main
+text by adding a short sentence about this dependency.
+
+ OK Emphasize that error per atom depends on lattice gemoetry in the main text.
+
+ - In the SI, errors are evaluated in the ideal case. As this paper can
+be considered as a road map, it would be useful to state the current
+state of the art for the different steps and to address the general
+question: from an experimental point of view, how far we are from
+realizing even a rudimentary version of this network where a boost of
+the overall precision can be unambiguously demonstrated?
+
+ -> Ask Jun for help.
+ -> Add analysis of, how far are the current experimental technologies from creating a prototype of this network?
