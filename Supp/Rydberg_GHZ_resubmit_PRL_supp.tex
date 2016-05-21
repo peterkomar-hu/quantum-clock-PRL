@@ -152,6 +152,12 @@ imperfections of this scheme by summing the error terms $\eps_1 + \eps_2 +
 \eps_3$ only (from Eq.
 (\ref{eq:f1}), (\ref{eq:f2}), (\ref{eq:f3})).
 
+In section \ref{sec:Calculation for messenger atom}, we calculate a more
+accurate result for the error contribution of imperfect blockade in the case of
+placing the messenger atom close on the border of the cloud. We find  that this
+increases the effect of the imperfect blockate by a factor of $\sim 2$,
+resulting in an increase of $\sim 10\%$ in the total error.
+
 
 \section{Overview of optimization}
 In section \ref{sec:clock_precision}, we show that the figure of merit, the
@@ -945,6 +951,7 @@ $R$.
 
 Averaging over the cloud of atoms, can be approximated by the following integral
 \bel
+\label{eq:SI_Delta12}
 	\Ev{\frac{1}{\Delta_{12}^2}} \approx \left(\frac{\hbar}{C_{12}^{(3)}}\right)^2
 	\underbrace{\frac{1}{V^2}\intop_V\d{^\eta \br_j}\intop_V\d{^\eta \br_k}|\br_j -
 	\br_j|^6}_{R^6 I}
@@ -959,7 +966,7 @@ interaction, to turn the integrals into one dimensional ones.
 	R^6 I_\text{2D} &=& \frac{1}{(\pi R^2)^2}\intop_0^R\d{r}2\pi r
 	\intop_{0}^{2R}\d{x} S_R(r,x) x^6,
 	\\
-	R^6 I_\text{2D} &=& \frac{1}{(4\pi R^3/3)^2}\intop_0^R\d{r}4\pi r^2
+	R^6 I_\text{3D} &=& \frac{1}{(4\pi R^3/3)^2}\intop_0^R\d{r}4\pi r^2
 	\intop_{0}^{2R}\d{x} A_R(r,x) x^6,
 \eal
 where the
@@ -1021,6 +1028,27 @@ $I_\text{3D} = 4.27$.
 Using that $\pi R^2 = n a^2$ (in 2D) and $4\pi R^3/3 = n a^3$ (in 3D), we can
 obtain the expressions in \refeq{eq:f1}.
 
+\section{Calculating $\ev{1/\Delta_{12}^2}$ for messenger atom}
+\label{sec:Calculation for messenger atom}
+When a messenger atom is used, we imaging placing it just outside the
+amotic cloud. This changes the expression from \refeq{eq:SI_Delta12} to
+\bel
+	\Ev{\frac{1}{\Delta_{12}^2}} \approx \left(\frac{\hbar}{C_{12}^{(3)}}\right)^2
+	\frac{1}{V} \intop_V\d{^\eta \br} |\br - \br_m|^6,
+\eel
+where $\br$ is the position of an atom in the cloud, and $\br_m$ is the
+messenger atom's position. Following the same steps as in the previous section,
+we need to calculate the following integrals:
+\bal
+	R^6 J_\text{2D} &=& \frac{1}{\pi R^2} \intop_0^{2R}\d{x} S_R(r_m,x) x^6,
+	\\
+	R^6 J_\text{3D} &=& \frac{1}{4\pi R^3/3} \intop_0^{2R} \d{x}A_{R}(r_m, x) x^6.
+\eal
+Using that $r_m = |\br_m| = R$, and the expressions for $S_R$ and $A_R$, we get
+$J_\text{2D} = 8.75$ and $J_\text{3D} = 4.27$.
+
+This results in a $\sim~2$-fold increase of the imperfect blockade error,
+raising its contribution to 20-30\% in the total error, and increasing it by $\sim 10\%$
 
 \section{Calculating $\ev{1/\Delta_{11}^2}$}
 Following the same line of thoughts as in the previous section, we can write the
@@ -1037,6 +1065,8 @@ section, and we obtain $J_\text{2D} = 61.29$, $J_\text{3D} = 68.26$.
 
 Using that $\pi R^2 = n a^2$ (in 2D) and $4\pi R^3/3 = n a^3$ (in 3D), we can
 obtain the expressions in \refeq{eq:f3}.
+
+
 
 %\bibliography{Rydberg_GHZ}
 

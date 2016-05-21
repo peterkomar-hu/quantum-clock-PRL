@@ -22,7 +22,7 @@ case, as the current averaging approach takes every two atoms in a 2D
 or 3D configuration, whereas for messenger atom this averaging should
 consider a fixed position for one of the atoms (the messenger atom).
 
- -> Calculate blockade error for single messanger atom.
+ OK Calculate blockade error for single messenger atom.
 
 4) In the supplementary material, section III C, in estimating
 $\epsilon_5$, the authors include the collective enhancement factor of
@@ -80,7 +80,7 @@ paper.
 network of clocks, is there a hidden assumption on the local
 oscillators at spatially separate clocks to be phase-locked?
 
- -> Explain that local oscialltors need to be synchronized in Supp.
+ OK Explain that local oscialltors need to be synchronized in main text.
 
  
 Minor suggestions/corrections:
@@ -167,5 +167,5 @@ question: from an experimental point of view, how far we are from
 realizing even a rudimentary version of this network where a boost of
 the overall precision can be unambiguously demonstrated?
 
- -> Ask Jun for help.
+ OK Ask Jun for help.
  -> Add analysis of, how far are the current experimental technologies from creating a prototype of this network?
