@@ -115,29 +115,29 @@ step.
 "In practice, ...". The sentence "In such a case, the messenger atom
 can BE used" is missing "BE".
 
- -> Fix typo.
+ OK Fix typo.
 
 6) Page 4, below figure 5, the sentence starting with "Collective
 enhancement and phase matching of the ..." needs a reference to the
 supplementary material.
 
- -> Add reference to Supp.
+ OK Add reference to Supp.
 
 7) In the supplementary material, section 1, before Eq. 2, [pi]_{f,r1}
 --> [\pi]_{f,r1}
 
- -> Fix typo.
+ OK Fix typo.
 
 8) In the supplementary material, section III C, "the spontaneous
 emission lifetime of the |e> --> |f> transition" should be "|e> -->
 |g> transition"?
 
- -> Fix typo.
+ OK Fix typo.
 
 9) In Eq. 22 in the supplementary material, I suggest to use a
 different symbol for the cavity finesse.
 
- -> Use different symbol for cavity finess.
+ OK Use different symbol for cavity finess.
  
  
  Referee B:
