@@ -88,7 +88,7 @@ Minor suggestions/corrections:
 1) I suggest the authors to add M to the figure 1 to clarify number of
 ensembles in each clock.
 
- -> Add 'M' to figure 1.
+ OK Add 'M' to figure 1.
 
 2) In the first paragraph in page 2, description of the 4th step is
 not clear.

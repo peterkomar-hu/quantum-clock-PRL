@@ -380,33 +380,34 @@ In the fourth step, the ensembles perform a local CNOT operation on the two
 collective degrees of freedom, $f\+$ and $s\+$. This is done with the
 following pulse sequence, $[\pi]_{s,r2}$, $[\pi]_{f,r1}$,
 $[\pi/\sqrt{n}]_{g,r1}$, $[\pi]_{f,r1}$, $[\pi]_{s,r2}$, shown on
-\reffig{fig:connection}(a), which promotes any population in $s$ to $r_2$, which
-then blocks the path through $r_1$. The result is a
-conditional flip $\ket{0_f} \leftrightarrow \ket{1_f}$, conditioned on having zero $s\+$ excitations. If we perform
-$f\leftrightarrow s$ swaps before and after this process, we get a coherent flip
-between $\ket{0_f, 0_s} \leftrightarrow \ket{0_f, 1_s}$. 
+\reffig{fig:connection}(a). This promotes any population in $s$ to $r_2$,
+which then blocks the path $g\leftrightarrow r_1 \leftrightarrow f$.
+The result is a conditional flip $\ket{0_f} \leftrightarrow \ket{1_f}$,
+conditioned on having zero $s\+$ excitations. If we perform $f\leftrightarrow s$
+swaps before and after this process, we get a coherent flip between $\ket{0_f,
+0_s} \leftrightarrow \ket{0_f, 1_s}$.
 
 To understand the resulting state, let us consider two
 entangled links, connecting three neighboring ensembles $k-1,k$ and
 $k+1$ as shown in \reffig{fig:connection}(b). The corresponding state, before
 the fourth step, is
 \bel 
-	\big(\ket{0,1} + \ket{1,0}\big)_{s_{k-1},f_k}
+	\big(\ket{0_{s_{k-1}},1_{f_k}} + \ket{1_{s_{k-1}},0_{f_k}}\big)
 	\otimes
-	\big( \ket{0,1}  + \ket{1,0}  \big)_{s_k,f_{k+1}},
+	\big(\ket{0_{s_{k}},1_{f_{k+1}}} + \ket{1_{s_{k}},0_{f_{k+1}}}\big),
 \eel
 where $\ket{n_{s_{k-1}}, n_{f_k}}\otimes\ket{n_{s_k},n_{f_{k+1}}}$ indicate the
 number of excitations in the modes $s_{k-1}, f_k, s_k, f_{k+1}$ of the three
 ensembles.
-After the conditional flip of $s_k$ and measurement of $n_{s_k} \rightarrow m
+After the conditional flip of $s_k$ and measurement of $n_{s_k}$, yielding $m
 \in \{0,1\}$, the state becomes $\ket{0,1, 1-m} + \ket{1,0,m}$, where the
 remaining kets stand for $\ket{n_{s_{k-1}}, n_{f_k}, n_{f_{k+1}}}$.
-Depending on the outcome, either only $f_k$ (if $n_{s_k} \rightarrow 1$) or the
-entire right hand side (if $n_{s_k} \rightarrow 0$) needs to be flipped in order
-to obtain the desired GHZ state, $\bigotimes_k \ket{0_f}_k + \bigotimes_k
-\ket{1_f}_k$, of the $f$ excitations of each clock, $k = 1,2,\dots K$.
+Depending on the outcome, either only $f_k$ (if $n_{s_k} = 1$) or the
+entire right hand side (if $n_{s_k} = 0$) needs to be flipped in order
+to obtain the desired GHZ state, $\bigotimes_k \ket{0_{f_k}} + \bigotimes_k
+\ket{1_{f_k}}$, of the $f$ excitations of each clock, $k = 1,2,\dots K$.
 \begin{figure}
-\centering
+\centering 
 \includegraphics[width=0.45\textwidth]{./connection.pdf}
 \caption
 [Connecting links into non-local GHZ state]
@@ -545,8 +546,8 @@ being held in position by an optical lattice with period $a =
 275.75~\text{nm}$, each potential minimum holding exactly one Yb atom.
 (The lattice intensity can be modulated during the Rydberg state excitation
 \cite{Tiecke2014}.)  Overall fidelity turns out to depend on the
-lattice geometry; it is the higest for 3D optical lattice.
- 
+lattice geometry; it is the highest for 3D optical lattice.
+  
 We consider the following errors in our analysis. During
 non-local connection, we take into account the finite $r_1$-$r_2$ interaction, which
 allows the creation of an $r_1$ excitation with some small probability, even if
