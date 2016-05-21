@@ -55,7 +55,7 @@ atoms and coherence time of the local oscillator. I would like the
 authors to compare their results to the case using a spin-squeezed
 ensemble in Ref. [10].
 
- -> Compare final results with numbers in reference [10] (Kasevich)
+ OK Compare final results with numbers in reference [10] (Kasevich)
 
 7) In section III E, the authors neglect fiber and coupling loss. This
 needs to be justified, maybe with reference to experimental values or
