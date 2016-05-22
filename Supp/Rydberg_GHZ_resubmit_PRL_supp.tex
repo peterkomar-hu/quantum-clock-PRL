@@ -368,35 +368,37 @@ where $\gamma_\text{dark}$ is the dark count rate of the detectors,
  The factor of $n$ is due to the collective enhancement of the said transition, and
  the factor of 4 is because four pulses are used in each connection.
 
-We note that in order to take full advantage of the collective enhancement
-factor, $n$ in \refeq{eq:f5}, the phase matching condition has to be satisfied
-between the two coherent fields, $g\rightarrow r_1$ (II) and $r_1\rightarrow e$
-(III), and the spontaneously emitted photon $e\rightarrow g$ (IV). When an
-optical cavity is placed around the ensemble, for the purpose of enhancing the
-spontaneous emission, one need to carefully choose the wavevectors of field II
-and III, such that $\bk_\text{IV} = \bk_\text{II} - \bk_\text{III}$, where
-$\bk_\text{IV}$ is the wavevector of the emitted photon, which should be
-paralell to the axis of the optical cavity, and the fields II and III should be
-incident at a non-zero angle in order to not be blocked by the cavity. This is
-possible only if the magnitude of $\bk_\text{III}$ is chosen to be slightly
-larger than required to bridge the energy difference between $r_1$ and $e$.
-Because the frequency of the state $e$ has a large spread (since it is very
-short-lived), the rate of the $r_1\rightarrow e \rightarrow g$ transition will
-not change significantly. (See \reffig{fig:cavity_fields}.)
+We note that the probabilistic nature of the two-photon detection requires
+repeating the connection steps between clocks every time it fails. With no
+additional noise, this happens every second time, on average, requiring
+resetting the $f$ and $s$ qubits in the two clocks in question. If the distance
+between clocks is very large, photon propagation errors will increase the
+average number of resets required for a single connection. Since every
+qubit reset introduces additional errors, we want to minimize photon loss. If
+the photon loss probabilit is $\eps$, the two-photon coincidence probabilit
+becomes $\frac{1}{2}(1-\eps)^2$.
 
-\begin{figure}
-\centering
-\includegraphics[width=0.40\textwidth]{./cavity_fields.pdf}
-\caption[cavity_fields]{
-\label{fig:cavity_fields}
-The spontaneous emission can be enhanced by an optical
-cavity only if the fields involved in the process are phase matched. This is
-possible by setting the setting the frequence of field III slightly higher,
-allowing the three fields to not be co-propagating. This way the coherent
-fields can enter at an angle, and not be blocked by the high-finesse optical
-cavity. The transition rate does not change considerably if the detuning of
-III is smaller than the linewidth of level $e$.}
-\end{figure}
+In the case of optical fibers (using an attenuation length of $L_\text{att} \sim
+20$ km), we estimate $\eps \sim 1 - e^{-L/L_\text{att}}$, whose effect becomes
+comparable to the ideal $50\%$ chance at around $L\sim 7\text{~km}$. Currently
+we imagine our scheme working for terrestrial labs connected by fiber not longer
+than this.
+
+If clocks are operational on board of satellites, and optical links are
+establised by actively stabilized telescopes, we estimate the photon loss
+probability, due to diffraction, using the far-field (normalized) intensity
+distribution (Airy-disk), $P(\theta) =
+\frac{1}{\pi}\left(\frac{J_1(kR\sin\theta)}{\sin\theta}\right)^2$, where $J_1$
+is a Bessel function. After approximating $\sin\theta\approx \theta$, we can
+write the photon error probability as
+\bel
+	\eps = 1-2\intop_0^{kR^2/L}\d{x}\frac{(J_1(x))^2}{x},
+\eel
+where $R$ is the radius of the telescope objectives, and $k$ is the photon's
+wavevector. Assuming $R\sim 1.25~\text{m}$ (Hubble's objective) and 3.11~eV
+photon, the distance when photon loss error rate reaches $50\%$ is $1.5\times
+10^7~\text{m} = 15,000~\text{km}$, which is larger that the average distance
+between neighboring GPS satellites.
 
 \subsection{Memory loss}
 During the creation step of each link, the state $\ket{s}$ is used as memory.
@@ -447,6 +449,36 @@ where $w$ is the radius of the ensembles cross section perpendicular to $\bk_e$,
 ($w = a(n/\pi)^{1/2}$ for 2D, and $w = a(3n/(4\pi))^{1/3}$ for 3D.), and $k_e =
 2\pi/ (1.4\,\mu\text{m})$, and $I\sim 100$ is the finesse of the cavity
 that we envision using.
+
+We note that in order to take full advantage of the collective enhancement
+factor, $n$ in \refeq{eq:f7}, the phase matching condition has to be satisfied
+between the two coherent fields, $g\rightarrow r_1$ (II) and $r_1\rightarrow e$
+(III), and the spontaneously emitted photon $e\rightarrow g$ (IV). When an
+optical cavity is placed around the ensemble, for the purpose of enhancing the
+spontaneous emission, one need to carefully choose the wavevectors of field II
+and III, such that $\bk_\text{IV} = \bk_\text{II} - \bk_\text{III}$, where
+$\bk_\text{IV}$ is the wavevector of the emitted photon, which should be
+paralell to the axis of the optical cavity, and the fields II and III should be
+incident at a non-zero angle in order to not be blocked by the cavity. This is
+possible only if the magnitude of $\bk_\text{III}$ is chosen to be slightly
+larger than required to bridge the energy difference between $r_1$ and $e$.
+Because the frequency of the state $e$ has a large spread (since it is very
+short-lived), the rate of the $r_1\rightarrow e \rightarrow g$ transition will
+not change significantly. (See \reffig{fig:cavity_fields}.)
+ 
+\begin{figure}
+\centering
+\includegraphics[width=0.40\textwidth]{./cavity_fields.pdf}
+\caption[cavity_fields]{
+\label{fig:cavity_fields}
+The spontaneous emission can be enhanced by an optical
+cavity only if the fields involved in the process are phase matched. This is
+possible by setting the setting the frequence of field III slightly higher,
+allowing the three fields to not be co-propagating. This way the coherent
+fields can enter at an angle, and not be blocked by the high-finesse optical
+cavity. The transition rate does not change considerably if the detuning of
+III is smaller than the linewidth of level $e$.}
+\end{figure}
 
 
 % \subsection{Pulse area errors}
