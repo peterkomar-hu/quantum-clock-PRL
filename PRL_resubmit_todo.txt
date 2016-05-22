@@ -9,13 +9,17 @@ Referee A:
  - If this probability is not negligible, one needs to consider errors
 due to such an effect.
 
- -> Discuss with Turker
+ OK Discuss with Turker
+ -> Use formula from reference that Turker sent to find the closest Rydberg level to 6s120s.
+ -> Use Andrei's formula to estimate the error of exciting this other state.
 
 2) It is worth quantifying the ionization rate with expected trapping
 field intensity for Rydberg level of 120.
 
- -> Discuss with Turker
-
+ OK Discuss with Turker
+ -> Turker will send email about numbers
+ -> Write short paragrpah describing that ionization is not an issue even at n=120
+ 
 3) I believe error terms that involve averaging over
 <1/\Delta> needs to be evaluated separately for the messenger atom
 case, as the current averaging approach takes every two atoms in a 2D
@@ -65,16 +69,16 @@ should discuss the effect of inefficiency due to fiber or coupling
 loss. If this can be circumvented via a heralding BSM, how does a
 limited interference visibility affect the fidelity?
 
- -> Estimate fiber loss between labs 
- -> Estimate free-space loss between satellites
- -> Derive maximum distances, where the waiting time is not affecting fidelity (this comes from memory time of the s-state)
-
+ OK Estimate fiber loss between labs 
+ OK Estimate free-space loss between satellites
+ OK Derive maximum distances, where the waiting time is not affecting fidelity 
+ 
 8) It will be informative, if the authors provide a timescale for a
 successful generation of a global GHZ state in their scheme for the
 total number or atoms/ensembles/clocks in the example discussed in the
 paper.
 
- -> Estimate timescale for creating the global GHZ state (Assume 80% local operation fidelity)
+ OK Estimate timescale for creating the global GHZ state (Assume 80% local operation fidelity)
 
 9) In the calculation regarding precision or stability of the quantum
 network of clocks, is there a hidden assumption on the local

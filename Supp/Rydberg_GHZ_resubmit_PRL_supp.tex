@@ -998,6 +998,41 @@ Rydberg states $\tilde n$, for the 2D and 3D setup.}
 For $\tilde n = 120$, the gain is $G_\text{max} = 10$ (2D) and $12$ (3D).
 
 
+\section{GHZ generation timescale}
+The global GHZ state needs to be set up at the beginning of every clock cycle.
+The average total time required to perform every step successfully is determined
+by the time it takes the longest step (photon propagation), and how many times
+this has to be repeated, after heralding indicates (partial) failure.
+
+Ideally photon propagation and classical communication takes $2L/c$ time, where
+$L$ is the distance between neighboring clocks and $c$ is the speed of light
+(in the fiber). For clocks separated by $5~\text{km}$, this is
+$0.17~\mu\text{s}$.
+
+However, the two-photon detection process is probabilistic, which (for
+distances $\sim 5$~km) succeeds only every fourth time $p=1/4$. This means that
+the probability that a single link still fails to establish after the $t$th
+trial is $(1-p)^t$. Conversely, the probability that it succeeds some time
+before or on the $t$th trials is $1-(1-p)^t$. The probability that all $K-1$
+links succeed is $\left[1-(1-p)^t\right]^{K-1}$, and the probability that at
+least one of them still didn't succeed in $t$ trails is $1 -
+\left[1-(1-p)^t\right]^{K-1}$. Now, this is exactly the probability that we need
+to try more than $t$ times before globally succeeding. This means we can write
+the probability of globally succeeding exactly on the $t$the trial is:
+\bal
+	\PP(t) &=& \PP(\text{no success in $t-1$ trial}) \nonumber\\
+	&& - \PP(\text{no
+	success in $t$ trials}) = \nonumber\\
+	&=& \left\{1 - \left[1-(1-p)^{t-1}\right]^{K-1}\right\} \nonumber\\
+	&& - \left\{1 - \left[1-(1-p)^t\right]^{K-1}\right\}
+\eal
+The expectation value of $t$ (number of required repetitions) can be calculated
+numerically for $p=0.25$ and $K=10$ is $\ev{t} = 10.33$.
+
+Multiplying the ideal wait time with this expected number of repetitions gives
+$1.75\mu\text{s}$ average time required to set up the global GHZ state.
+
+
 \section{Calculating $\ev{1/\Delta_{12}^2}$}
 \label{sec:calc_Delta12}
 Here, we calculate the average of 
