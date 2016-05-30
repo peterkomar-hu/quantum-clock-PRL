@@ -10,8 +10,8 @@ Referee A:
 due to such an effect.
 
  OK Discuss with Turker
- -> Use formula from reference that Turker sent to find the closest Rydberg level to 6s120s.
- -> Use Andrei's formula to estimate the error of exciting this other state.
+ OK Use formula from reference that Turker sent to find the closest Rydberg level to 6s120s.
+ OK Use Andrei's formula to estimate the error of exciting this other state.
 
 2) It is worth quantifying the ionization rate with expected trapping
 field intensity for Rydberg level of 120.
@@ -172,4 +172,4 @@ realizing even a rudimentary version of this network where a boost of
 the overall precision can be unambiguously demonstrated?
 
  OK Ask Jun for help.
- -> Add analysis of, how far are the current experimental technologies from creating a prototype of this network?
+ OK Add analysis of, how far are the current experimental technologies from creating a prototype of this network?
