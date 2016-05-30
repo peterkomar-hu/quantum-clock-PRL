@@ -17,8 +17,8 @@ due to such an effect.
 field intensity for Rydberg level of 120.
 
  OK Discuss with Turker
- -> Turker will send email about numbers
- -> Write short paragrpah describing that ionization is not an issue even at n=120
+ OK Turker will send email about numbers
+ OK Write short paragrpah describing that ionization is not an issue even at n=120
  
 3) I believe error terms that involve averaging over
 <1/\Delta> needs to be evaluated separately for the messenger atom

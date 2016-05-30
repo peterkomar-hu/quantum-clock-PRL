@@ -1035,6 +1035,23 @@ Multiplying the ideal wait time with this expected number of repetitions gives
 $1.75\mu\text{s}$ average time required to set up the global GHZ state.
 
 
+\section{Prospects with current experimental technology}  
+In our analysis above, we investigated the effects of noise sources which are
+fundamental to photons and Rydberg states. This result, however, posits only 
+a lower bound to infidelity. Realizing our scheme with current
+experimental technology is more challenging than it may seem, due to additional
+imperfections of the implementation. 
+
+Out of the five steps of our protocol, generating the spin-photon
+entangled states (step 2) and producing the entangled states between neighboring
+but remote atomic ensembles (step 3) are the most restrictive. Although
+possible, the overall efficiency is low ($\sim 70\%$ for
+non-local entangling \cite{Vittorini2014}, and $\sim 90\%$ for Rydberg
+efficiency \cite{Labuhn2014}).
+This greatly limits the possibility of demonstrating overall precision boost
+with current experimental technology.
+
+
 \section{Calculating $\ev{1/\Delta_{12}^2}$}
 \label{sec:calc_Delta12}
 Here, we calculate the average of 
@@ -1156,7 +1173,7 @@ average as
 	\left(\frac{\hbar}{C_{11}^{(6)}}\right)^2
 	\underbrace{\frac{1}{V^2}\intop_V\d{^\eta \br_j}\intop_V\d{^\eta \br_k}|\br_j
 	- \br_j|^{12}}_{R^{12} J}
-	\frac{1}{V^2}.
+	\frac{1}{V^2}. 
 \eel
 The integral $J$ can be evaluated following the same methods as in the previous
 section, and we obtain $J_\text{2D} = 61.29$, $J_\text{3D} = 68.26$.
@@ -1166,7 +1183,7 @@ obtain the expressions in \refeq{eq:f3}.
 
 
 
-%\bibliography{Rydberg_GHZ}
+% \bibliography{Rydberg_GHZ}
 
 %merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
 %Control: key (0)
@@ -1176,7 +1193,7 @@ obtain the expressions in \refeq{eq:f3}.
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{5}%
+\begin{thebibliography}{7}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -1276,7 +1293,34 @@ obtain the expressions in \refeq{eq:f3}.
   10.1038/nphys3000} {\bibfield  {journal} {\bibinfo  {journal} {Nature
   Physics}\ }\textbf {\bibinfo {volume} {10}},\ \bibinfo {pages} {582}
   (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
-\end{thebibliography}%
+\bibitem [{\citenamefont {Vittorini}\ \emph {et~al.}(2014)\citenamefont
+  {Vittorini}, \citenamefont {Hucul}, \citenamefont {Inlek}, \citenamefont
+  {Crocker},\ and\ \citenamefont {Monroe}}]{Vittorini2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Vittorini}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Hucul}},
+  \bibinfo {author} {\bibfnamefont {I.~V.}\ \bibnamefont {Inlek}}, \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {Crocker}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {Monroe}},\ }\href {\doibase
+  10.1103/PhysRevA.90.040302} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev. A}\ }\textbf {\bibinfo {volume} {90}},\ \bibinfo {pages} {040302}
+  (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Labuhn}\ \emph {et~al.}(2014)\citenamefont {Labuhn},
+  \citenamefont {Ravets}, \citenamefont {Barredo}, \citenamefont {B\'eguin},
+  \citenamefont {Nogrette}, \citenamefont {Lahaye},\ and\ \citenamefont
+  {Browaeys}}]{Labuhn2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Labuhn}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Ravets}},
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Barredo}}, \bibinfo
+  {author} {\bibfnamefont {L.}~\bibnamefont {B\'eguin}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Nogrette}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Lahaye}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Browaeys}},\ }\href {\doibase
+  10.1103/PhysRevA.90.023415} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev. A}\ }\textbf {\bibinfo {volume} {90}},\ \bibinfo {pages} {023415}
+  (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+\end{thebibliography}% 
 
 
 \end{document}
